@@ -1,5 +1,7 @@
 version: 0.2
-
+env:
+  variables:
+    JAVA_HOME: /var/lib/jvm/java-11
 phases:
   install:
     runtime-versions:
