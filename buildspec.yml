@@ -5,8 +5,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: corretto11
-  pre_build:
+      java: corretto17
     commands:
       - which java
       - java -version
