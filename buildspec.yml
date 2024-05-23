@@ -9,6 +9,7 @@ phases:
   pre_build:
     commands:
       - which java
+      - java -version
       - mvn -v
       - echo Logging in to Amazon ECR...
       - aws --version
