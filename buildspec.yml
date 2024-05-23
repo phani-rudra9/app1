@@ -1,13 +1,14 @@
 version: 0.2
-env:
-  variables:
-    JAVA_HOME: /var/lib/jvm/java-11
+# env:
+#   variables:
+#     JAVA_HOME: /var/lib/jvm/java-11
 phases:
   install:
     runtime-versions:
       java: corretto11
   pre_build:
     commands:
+      - which java
       - mvn -v
       - echo Logging in to Amazon ECR...
       - aws --version
